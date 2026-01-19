@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+    { "source": "/sub-store/(.*)", "destination": "https://sub-store-org.github.io/Sub-Store-Front-End/$1" }
+  ]
+}
