@@ -1,7 +1,7 @@
 {
   "name": "sub-store-vercel",
-  "version": "1.0.0",
-  "scripts": {
-    "install": "curl -fsSL https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-cli-linux-amd64 -o sub-store && chmod +x sub-store"
+  "version": "2.0.0",
+  "dependencies": {
+    "axios": "^1.6.0"
   }
 }
