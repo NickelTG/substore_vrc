@@ -1,6 +1,12 @@
 {
   "rewrites": [
+    // 1. Все запросы к API отправляем на наш скрипт
     { "source": "/api/subsexxo1/(.*)", "destination": "/api/index.js" },
-    { "source": "/sub-store/(.*)", "destination": "https://sub-store-org.github.io/Sub-Store-Front-End/$1" }
+    
+    // 2. Все остальные запросы показывают интерфейс Sub-Store
+    { 
+      "source": "/(.*)", 
+      "destination": "https://sub-store-org.github.io/Sub-Store-Front-End/$1" 
+    }
   ]
 }
